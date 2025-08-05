@@ -13,7 +13,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <a href="/">
               <img 
-                src="/src/assets/logo embtech.png"
+                src="/src/assets/logoEmbtech.png"
                 alt="EmbTech" 
                 className="h-8 w-auto"
               />
