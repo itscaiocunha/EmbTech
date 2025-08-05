@@ -89,7 +89,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center space-x-6">
               <img 
-                src="/src/assets/logoEmbtechBranca.png" 
+                src="https://emb-tech.vercel.app/images/logoEmbtech.png" 
                 alt="EmbTech" 
                 className="h-8 w-auto"
               />
