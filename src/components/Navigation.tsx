@@ -26,7 +26,7 @@ const Navigation = () => {
                 Produtos
               </a>
               <a href="/solucoes" className="text-foreground hover:text-primary transition-colors">
-                Soluções
+                Serviços
               </a>
               <a href="/blog" className="text-foreground hover:text-primary transition-colors">
                 Blog
