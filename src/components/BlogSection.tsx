@@ -3,95 +3,105 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, ArrowRight } from "lucide-react";
 
-const BlogSection = () => {
-  const blogPosts = [
-    {
-      id: 1,
-      title: "O Futuro da IoT em Automação Industrial",
-      description: "Como a Internet das Coisas está revolucionando a indústria com soluções embarcadas inteligentes.",
-      category: "IoT",
-      date: "2024-01-15",
-      readTime: "5 min",
-      image: "/src/assets/iot-device.jpg"
-    },
-    {
-      id: 2,
-      title: "Desenvolvimento de Firmware: Melhores Práticas",
-      description: "Técnicas avançadas para otimização e segurança no desenvolvimento de firmware embarcado.",
-      category: "Firmware",
-      date: "2024-01-10",
-      readTime: "8 min",
-      image: "/src/assets/circuit-board.jpg"
-    },
-    {
-      id: 3,
-      title: "Sensores Inteligentes na Indústria 4.0",
-      description: "Explorando as tecnologias de sensoriamento que estão moldando o futuro da manufatura.",
-      category: "Hardware",
-      date: "2024-01-05",
-      readTime: "6 min",
-      image: "/src/assets/industrial.jpg"
-    }
-  ];
+// Dados dos posts (mantidos para o exemplo)
+const blogPosts = [
+  {
+    id: 1,
+    title: "Embtech presente na FIEE Smart Future, realizada em São Paulo",
+    description: "De 18 a 21 de julho, em São Paulo (SP), acontece a FIEE Smart Future, o maior evento da América Latina para a indústria elétrica, eletrônica e de automação.",
+    category: "Evento",
+    date: "2023-07-17",
+    image: "/images/EventoFIEE.jpg",
+    link: "/blog"
+  },
+  {
+    id: 2,
+    title: "Desenvolvendo soluções embarcadas com a família EMBFlex",
+    description: "A Embtech oferece uma família de hardware voltada para o desenvolvimento rápido de soluções embarcadas através das suas placas EMBFlex.",
+    category: "Placas Embarcadas",
+    date: "2020-07-09",
+    image: "/images/placaBlog.jpg",
+    link: "/blog"
+  },
+  {
+    id: 3,
+    title: "Embtech lança nova linha de produtos na FIEE Smart Future",
+    description: "De 23 a 26 de julho, em São Paulo (SP), acontece a FIEE Smart Future, onde a Embtech apresentará suas inovações e nova linha de produtos.",
+    category: "Lançamento",
+    date: "2019-07-19",
+    image: "/images/linhaProdutos.jpg",
+    link: "/blog"
+  }
+];
 
+const BlogPostCard = ({ post }) => {
   return (
-    <section className="py-24">
+    <Card className="group relative flex h-full flex-col overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-xl">
+      {/* Imagem do Post */}
+      <div className="aspect-video overflow-hidden">
+        <img
+          src={post.image}
+          alt={`Imagem de capa para o post: ${post.title}`}
+          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+      </div>
+      
+      {/* Conteúdo do Card */}
+      <div className="flex flex-1 flex-col p-6">
+        <CardHeader className="p-0 pb-4">
+          <div className="mb-3 flex items-center gap-4">
+            <Badge variant="default" className="bg-primary/10 text-primary hover:bg-primary/20">
+              {post.category}
+            </Badge>
+            <div className="flex items-center text-sm text-muted-foreground">
+              <Calendar className="mr-1.5 h-4 w-4" />
+              {new Date(post.date).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}
+            </div>
+          </div>
+          
+          <CardTitle className="text-xl leading-tight transition-colors duration-300 group-hover:text-primary">
+            {post.title}
+          </CardTitle>
+        </CardHeader>
+        
+        <CardContent className="flex-1 p-0">
+          <CardDescription className="text-base">
+            {post.description}
+          </CardDescription>
+        </CardContent>
+        
+        {/* Link "Ler Mais" que aparece no final do card */}
+        <div className="mt-6 flex items-center text-sm font-semibold text-primary">
+          Saiba mais
+          <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+        </div>
+      </div>
+
+      {/* Link invisível que cobre todo o card */}
+      <a href={post.link} className="absolute inset-0">
+        <span className="sr-only">Ver post: {post.title}</span>
+      </a>
+    </Card>
+  );
+};
+
+const BlogSection = () => {
+  return (
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 bg-[#C8D820] bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#C8D820]">
             Blog & Insights
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Compartilhamos conhecimento sobre tecnologias embarcadas, IoT e inovação
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Compartilhamos conhecimento sobre tecnologias embarcadas, IoT e as últimas inovações do setor.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
-            <Card key={post.id} className="group hover:shadow-lg transition-all duration-300 border-0 bg-card/60 backdrop-blur-sm">
-              <div className="aspect-video bg-primary mb-4 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/20 flex items-center justify-center">
-                  <div className="text-primary/60 text-4xl">📡</div>
-                </div>
-              </div>
-              
-              <CardHeader className="pb-4">
-                <div className="flex items-center gap-2 mb-2">
-                  <Badge variant="secondary" className="text-xs">
-                    {post.category}
-                  </Badge>
-                  <div className="flex items-center text-xs text-muted-foreground">
-                    <Calendar className="w-3 h-3 mr-1" />
-                    {new Date(post.date).toLocaleDateString('pt-BR')}
-                  </div>
-                </div>
-                
-                <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                  {post.title}
-                </CardTitle>
-                <CardDescription className="text-sm">
-                  {post.description}
-                </CardDescription>
-              </CardHeader>
-              
-              <CardContent className="pt-0">
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-muted-foreground">
-                    {post.readTime} de leitura
-                  </span>
-                </div>
-              </CardContent>
-            </Card>
+            <BlogPostCard key={post.id} post={post} />
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <a href="/blog">
-            <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70">
-              Ver todos os posts
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-          </a>
         </div>
       </div>
     </section>

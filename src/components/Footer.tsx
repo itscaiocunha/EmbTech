@@ -1,25 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Facebook, Twitter, Linkedin, Instagram, Youtube, Mail } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, Youtube, Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
-    "Fale Conosco": [
-      "Fale Conosco",
-      "Central de Atendimento",
-      "Comercial"
-    ],
     "Sobre Nós": [
-      "Quem Somos",
-      "Notícias",
-      "Localização"
-    ]
+      { label: "Quem Somos", href: "/sobre-nos" },
+      { label: "Notícias", href: "/blog" }      
+    ],
   };
 
   const socialLinks = [
-    { icon: <Instagram size={20} />, label: "Instagram", href: "https://www.instagram.com/embtech/s" },
+    { icon: <Instagram size={20} />, label: "Instagram", href: "https://www.instagram.com/embtech" },
+    { icon: <Linkedin size={20} />, label: "Linkedin", href: "https://www.linkedin.com/company/embtech/" },
+    { icon: <Phone size={20} />, label: "WhatsApp", href: "https://api.whatsapp.com/send/?phone=5535999998888&text=Ol%C3%A1%21+Gostaria+de+fazer+um+or%C3%A7amento%21&type=phone_number&app_absent=0" }
   ];
 
   return (
@@ -48,12 +44,12 @@ const Footer = () => {
                 <h4 className="font-semibold mb-4 text-[#C8D820]">{category}</h4>
                 <ul className="space-y-3">
                   {links.map((link) => (
-                    <li key={link}>
+                    <li key={link.label}>
                       <a 
-                        href="#" 
+                        href={link.href} 
                         className="text-primary-foreground/80 hover:text-primary-glow transition-colors text-sm"
                       >
-                        {link}
+                        {link.label}
                       </a>
                     </li>
                   ))}
@@ -89,7 +85,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center space-x-6">
               <img 
-                src="https://emb-tech.vercel.app/images/logoEmbtech.png" 
+                src="images/logoEmbtechBranca.png" 
                 alt="EmbTech" 
                 className="h-8 w-auto"
               />
@@ -99,14 +95,11 @@ const Footer = () => {
             </div>
             
             <div className="flex items-center space-x-6 text-sm">
-              <a href="#" className="text-primary-foreground/80 hover:text-primary-glow transition-colors">
+              <a href="/privacidade" className="text-primary-foreground/80 hover:text-primary-glow transition-colors">
                 Política de Privacidade
               </a>
-              <a href="#" className="text-primary-foreground/80 hover:text-primary-glow transition-colors">
+              <a href="/termos" className="text-primary-foreground/80 hover:text-primary-glow transition-colors">
                 Termos de Uso
-              </a>
-              <a href="#" className="text-primary-foreground/80 hover:text-primary-glow transition-colors">
-                Mapa do Site
               </a>
             </div>
           </div>

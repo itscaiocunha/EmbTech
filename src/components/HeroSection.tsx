@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
-import heroImage from "@/assets/hero-hardware.jpg";
 
 const HeroSection = () => {
   return (
@@ -8,7 +7,7 @@ const HeroSection = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src={heroImage} 
+          src="" 
           alt="Hardware embarcado" 
           className="w-full h-full object-cover"
         />

@@ -5,8 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Badge } from "@/components/ui/badge";
-import { MapPin, Phone, Mail, Clock, Users, Award, Lightbulb, HeartHandshake } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
@@ -27,29 +26,6 @@ const Contact = () => {
     }
   ];
 
-  const teamHighlights = [
-    {
-      icon: <Users className="h-8 w-8" />,
-      title: "50+ Especialistas",
-      description: "Engenheiros experientes em eletrônica embarcada"
-    },
-    {
-      icon: <Award className="h-8 w-8" />,
-      title: "10+ Anos",
-      description: "De experiência em desenvolvimento tecnológico"
-    },
-    {
-      icon: <Lightbulb className="h-8 w-8" />,
-      title: "200+ Projetos",
-      description: "Entregues com sucesso para diversos setores"
-    },
-    {
-      icon: <HeartHandshake className="h-8 w-8" />,
-      title: "98% Satisfação",
-      description: "Taxa de satisfação dos nossos clientes"
-    }
-  ];
-
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -58,24 +34,19 @@ const Contact = () => {
         <section className="pt-32 pb-16">
           <div className="container mx-auto px-4 lg:px-6">
             <div className="text-center max-w-4xl mx-auto">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Fale Conosco
+              <h1 className="text-5xl font-bold mb-6">
+                Entre em <span className="text-primary">Contato</span>
               </h1>
-              <p className="text-xl text-muted-foreground mb-8">
+              <p className="text-xl text-muted-foreground">
                 Pronto para transformar sua ideia em realidade? Nossa equipe de especialistas 
                 está aqui para ajudar você a desenvolver soluções eletrônicas inovadoras.
               </p>
-              <div className="flex flex-wrap gap-2 justify-center">
-                <Badge variant="secondary" className="text-sm px-4 py-2">Consultoria Especializada</Badge>
-                <Badge variant="secondary" className="text-sm px-4 py-2">Orçamento Sem Compromisso</Badge>
-                <Badge variant="secondary" className="text-sm px-4 py-2">Suporte Especializado</Badge>
-              </div>
             </div>
           </div>
         </section>
 
         {/* Contact Form & Info */}
-        <section className="py-16">
+        <section className="py-8">
           <div className="container mx-auto px-4 lg:px-6">
             <div className="grid lg:grid-cols-2 gap-12">
               {/* Contact Form */}
@@ -154,9 +125,6 @@ const Contact = () => {
                     <Button className="flex-1">
                       Enviar Solicitação
                     </Button>
-                    <Button variant="outline" className="flex-1">
-                      Agendar Reunião
-                    </Button>
                   </div>
                 </CardContent>
               </Card>
@@ -189,53 +157,6 @@ const Contact = () => {
                     </Card>
                   ))}
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Team Highlights */}
-        <section className="py-16 bg-muted/30">
-          <div className="container mx-auto px-4 lg:px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Por Que Escolher a EmbTech?</h2>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Somos especialistas em transformar ideias em soluções tecnológicas de alto impacto
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {teamHighlights.map((highlight, index) => (
-                <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow">
-                  <div className="inline-flex p-3 bg-primary/10 text-primary rounded-lg mb-4">
-                    {highlight.icon}
-                  </div>
-                  <h3 className="text-xl font-bold mb-2">{highlight.title}</h3>
-                  <p className="text-muted-foreground">{highlight.description}</p>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ or Additional CTA */}
-        <section className="py-16">
-          <div className="container mx-auto px-4 lg:px-6 text-center">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl font-bold mb-4">
-                Pronto para Começar seu Projeto?
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Nossa equipe está esperando para ajudar você a transformar sua visão em realidade. 
-                Agende uma consultoria gratuita hoje mesmo!
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="min-w-[200px]">
-                  Agendar Consultoria Gratuita
-                </Button>
-                <Button variant="outline" size="lg" className="min-w-[200px]">
-                  Download Material Técnico
-                </Button>
               </div>
             </div>
           </div>
