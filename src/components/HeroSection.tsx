@@ -5,21 +5,21 @@ import { ArrowRight, Play } from "lucide-react";
 // Dados para os slides do banner rotativo
 const slides = [
   {
-    image: "images/banner1.png",
+    image: "images/banner/banner1.png",
     title: "No mercado há",
     subtitle: "mais de 20 anos",
     description: "Embarcamos inteligência no seu produto",
     primaryCta: { text: "Nossos Produtos", href: "/produtos" },
   },
   {
-    image: "images/banner2.png",
+    image: "images/banner/banner2.png",
     title: "Equipe Altamente",
     subtitle: "Qualificada",
     description: "Prontos para tornar o seu projeto em realidade",
     primaryCta: { text: "Nossos Serviços", href: "/servicos" },
   },
   {
-    image: "images/banner3.png",
+    image: "images/banner/banner3.png",
     title: "Qualidade e Precisão",
     subtitle: "em Cada Componente",
     description: "Com certificação ISO 9001, garantimos os mais altos padrões de qualidade em cada placa e produto que desenvolvemos.",

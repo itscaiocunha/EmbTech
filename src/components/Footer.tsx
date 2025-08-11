@@ -85,7 +85,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center space-x-6">
               <img 
-                src="images/logoEmbtechBranca.png" 
+                src="images/logo/logoEmbtechBranca.png" 
                 alt="EmbTech" 
                 className="h-8 w-auto"
               />

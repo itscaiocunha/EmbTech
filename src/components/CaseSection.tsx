@@ -11,42 +11,42 @@ const CasesSection = () => {
       id: 1,
       title: "Solução Eletrônica para Fornos Profissionais e Industriais",
       description: "Placas eletrônicas para controle e automação de fornos industriais, garantindo precisão e eficiência no processo.",
-      image: "images/fornos.png",
+      image: "images/cases/fornos.png",
       link: "/cases"
     },
     {
       id: 2,
       title: "Solução Eletrônica para Secador de Café",
       description: "Sistema com microcontrolador ARM Cortex de alta velocidade para gerenciamento preciso da temperatura da fonte de calor.",
-      image: "images/secadoraCafe.png",
+      image: "images/cases/secadoraCafe.png",
       link: "/cases"
     },
     {
       id: 3,
       title: "Solução para Refrigerador de Bolsas de Sangue e Vacinas",
       description: "Placas para controle, automação e programação de refrigeradores de bolsas de sangue, vacinas e medicamentos oncológicos.",
-      image: "images/refrigeradorSangue.png",
+      image: "images/cases/refrigeradorSangue.png",
       link: "/cases"
     },
     {
       id: 4,
       title: "Solução Eletrônica para Incubadora de Ovos",
       description: "Placas para controle, automação e programação de incubadoras de ovos de grande porte, com IHM de 7 polegadas touchscreen.",
-      image: "/images/incubadora.png",
+      image: "/images/cases/incubadora.png",
       link: "/cases"
     },
     {
       id: 5,
       title: "Solução Eletrônica para Pesadora e Ensacadora Industrial",
       description: "Solução composta por placa eletrônica IHM e potência. Display colorido 3.5” TFT e touch resistivo.",
-      image: "images/pesadora.png",
+      image: "images/cases/pesadora.png",
       link: "/cases"
     },
     {
       id: 6,
       title: "Solução Eletrônica para Jardins Verticais",
       description: "Controlador eletrônico para automação e controle de regas de jardim vertical de acordo com estações do ano.",
-      image: "images/controladorJardim.png",
+      image: "images/cases/controladorJardim.png",
       link: "/cases"
     }
   ];
@@ -70,7 +70,7 @@ const CasesSection = () => {
           <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">
             NOSSAS SOLUÇÕES
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold">
+          <h2 className="text-4xl md:text-5xl text-primary font-bold">
             Portfólio de <span className="text-[#C8D820]">Aplicações</span>
           </h2>
         </div>

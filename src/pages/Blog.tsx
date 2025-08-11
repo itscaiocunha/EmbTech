@@ -14,7 +14,7 @@ const blogPosts = [
     description: "De 18 a 21 de julho, em São Paulo (SP), acontece a FIEE Smart Future, o maior evento da América Latina para a indústria elétrica, eletrônica e de automação.",
     category: "Evento",
     date: "2023-07-17",
-    image: "/images/EventoFIEE.jpg",
+    image: "/images/blog/EventoFIEE.jpg",
     content: `
       <p class="mb-4">De 18 a 21 de julho, em São Paulo (SP), acontece a FIEE Smart Future, Feira Internacional da Indústria Elétrica, Eletrônica, Energia e Automação. Este é o maior evento da América Latina nesta área e a Embtech, empresa de alta tecnologia, que projeta e fabrica soluções eletrônicas embarcadas para controle e automação de máquinas e equipamentos, estará presente.</p>
     `
@@ -25,7 +25,7 @@ const blogPosts = [
     description: "A Embtech oferece uma família de hardware voltada para o desenvolvimento rápido de soluções embarcadas através das suas placas EMBFlex.",
     category: "Placas Embarcadas",
     date: "2020-07-09",
-    image: "/images/placaBlog.jpg",
+    image: "/images/blog/placaBlog.jpg",
     content: `
       <p class="mb-4">A Embtech oferece uma família de hardware voltada para desenvolvimento rápido de soluções embarcadas através das suas placas EMBFlex.</p>
       <p class="mb-4">O sistema EMBFlex é formado por uma CPU EMBFlex e, se necessário, algumas placas FLEXCard. Na linha de CPU, oferecemos atualmente três modelos:</p>
@@ -34,9 +34,9 @@ const blogPosts = [
         <li>Uma CPU baseada em computação em módulo, podendo rodar Linux ou Windows embarcado.</li>
         <li>Uma CPU com conectividade sem fio (Wi-Fi/Bluetooth) baseada no ESP32.</li>
       </ul>
-      <img src="images/placa1.jpg" alt="CPU EMBFlex LPC17" class="my-6 rounded-lg shadow-md" />
-      <img src="images/placa2.jpg" alt="CPU EMBFlex SoM" class="my-6 rounded-lg shadow-md" />
-      <img src="images/placa3.jpg" alt="CPU EMBFlex ESP32" class="my-6 rounded-lg shadow-md" />
+      <img src="images/blog/placa1.jpg" alt="CPU EMBFlex LPC17" class="my-6 rounded-lg shadow-md" />
+      <img src="images/blog/placa2.jpg" alt="CPU EMBFlex SoM" class="my-6 rounded-lg shadow-md" />
+      <img src="images/blog/placa3.jpg" alt="CPU EMBFlex ESP32" class="my-6 rounded-lg shadow-md" />
       <p class="mb-4">De acordo com a aplicação, pode-se adicionar uma ou mais placas FLEXCard conectadas à CPU para realizar aquisição de sinais ou acionamentos de cargas. Isso é feito através do barramento FLEXBUS, que permite ligar até 31 placas do tipo FLEXCard por CPU EMBFlex.</p>
       <p class="mb-4">Na família de FLEXCards, temos placas para diversos tipos de sinais como, por exemplo, entradas e saídas digitais, relés, entradas analógicas e medição com análise de qualidade de energia. Além do hardware, a Embtech oferece todas as bibliotecas de software prontas para que o desenvolvedor possa criar suas aplicações rapidamente, sem ter que escrever o código do zero. Os compiladores disponíveis são, em sua maioria, gratuitos e em linguagem C.</p>
       <p>Se o cliente desejar, pode também contratar o desenvolvimento da aplicação pela Embtech, que vai entregar a solução funcionando. Oferecemos também todo o suporte para desenvolvedores de software que desejam utilizar os hardwares da família EMBFlex na criação de soluções embarcadas e IoT. Para mais informações e cotações, entre em contato com nossa equipe.</p>
@@ -48,12 +48,12 @@ const blogPosts = [
     description: "De 23 a 26 de julho, em São Paulo (SP), acontece a FIEE Smart Future, onde a Embtech apresentará suas inovações e nova linha de produtos.",
     category: "Lançamento",
     date: "2019-07-19",
-    image: "/images/linhaProdutos.jpg",
+    image: "/images/blog/linhaProdutos.jpg",
     content: `
       <p class="mb-4">De 23 a 26 de julho, em São Paulo (SP), acontece a FIEE Smart Future, Feira Internacional da Indústria Elétrica, Eletrônica, Energia e Automação. Este é o maior evento da América Latina nesta área e a Embtech, empresa de alta tecnologia que projeta e fabrica soluções eletrônicas embarcadas para controle e automação de máquinas e equipamentos, estará presente.</p>
       <p class="mb-4">A FIEE acontece a cada dois anos, e esta é a segunda vez que a Embtech participa. O objetivo é lançar a nova linha de produtos, Embflex, direcionada para desenvolvedores. São seis novas placas, uma delas desenvolvida em parceria com a suíça Toradex, especialista em módulos de processamento.</p>
       <h3 class="text-2xl font-bold my-6">Embflex</h3>
-      <img src="images/fiee.jpg" alt="Placas da linha Embflex" class="my-6 rounded-lg shadow-md" />
+      <img src="images/blog/fiee.jpg" alt="Placas da linha Embflex" class="my-6 rounded-lg shadow-md" />
       <p class="mb-4">Como o próprio nome sugere, estas placas podem ser combinadas para qualquer necessidade. O objetivo é que os programadores e integradores montem suas próprias soluções eletrônicas. “O céu é o limite para os makers desenvolverem suas soluções. Cada Flexcard (placa) possui características específicas, como se fossem peças de um quebra-cabeças que se complementam para atender à necessidade de automação e controle desejada”, explica a diretora geral da Embtech, Vanessa Miguel.</p>
       <p>A Embflex pode ser aplicada nos mais diversos setores, como industrial, hospitalar, agronegócio, logística, máquinas e Internet of Things (IoT). A intenção da empresa é lançar no mínimo cinco novas placas por ano, para abranger mercados ainda maiores.</p>
     `
@@ -64,13 +64,13 @@ const blogPosts = [
     description: "Uma grande mudança tecnológica vem ocorrendo nos sistemas digitais de controle de máquinas. Assim como as pessoas, equipamentos também caminham para estarem sempre conectados.",
     category: "IoT",
     date: "2019-07-18",
-    image: "images/iot.jpg",
+    image: "images/blog/iot.jpg",
     content: `
       <p class="mb-4">Uma grande mudança tecnológica vem ocorrendo nos sistemas digitais de controle de máquinas e equipamentos. Assim como as pessoas, máquinas e equipamentos também caminham para estarem sempre conectados, trocando informações e permitindo um controle muito mais inteligente e eficiente. É a era da Internet das Coisas (IoT) transformando a indústria.</p>
-      <img src="images/iot2.jpg" alt="Indústria 4.0" class="my-6 rounded-lg shadow-md" />
+      <img src="images/blog/iot2.jpg" alt="Indústria 4.0" class="my-6 rounded-lg shadow-md" />
       <p class="mb-4">Com a IoT, é possível monitorar em tempo real o desempenho de uma máquina, prever falhas antes que aconteçam (manutenção preditiva), otimizar o consumo de energia e coletar dados valiosos para a tomada de decisões estratégicas. A Embtech está na vanguarda dessa revolução, desenvolvendo soluções que embarcam inteligência e conectividade em seus produtos.</p>
       <h3 class="text-2xl font-bold my-6">Benefícios da Conectividade</h3>
-      <img src="images/iot3.jpg" alt="Dashboard de monitoramento IoT" class="my-6 rounded-lg shadow-md" />
+      <img src="images/blog/iot3.jpg" alt="Dashboard de monitoramento IoT" class="my-6 rounded-lg shadow-md" />
       <p>A conexão de máquinas e equipamentos abre um leque de possibilidades, desde a gestão remota de uma linha de produção até a criação de novos modelos de negócio baseados em serviços. A capacidade de coletar e analisar dados de operação permite um ciclo de melhoria contínua, aumentando a produtividade e a competitividade no mercado.</p>
     `
   }

@@ -22,7 +22,7 @@ const allProducts = [
       id: "cpu-esp32",
       title: "CPU EMBFlex ESP32",
       description: "Hardware com microprocessador Xtensa 32-bit LX6 de até 240MHz.",
-      image: "images/CPUEsp.png",
+      image: "images/produtos/CPUEsp.png",
       longDescription: "Hardware com um microprocessador Xtensa 32-bit LX6 de até 240MHz (4MB ROM, 520KB SRAM, SPI flash externa), oferecendo diversos recursos customizáveis para atender a uma solução embarcada completa, tais como: Wi-Fi, Bluetooth, mDNS, RS-485, memória EEPROM, RTC, sensor de temperatura e barramentos de expansão.",
       specs: [
         "1 Interface RS485/FlexBUS",
@@ -41,7 +41,7 @@ const allProducts = [
       id: "cpu-lpc17",
       title: "CPU EMBFlex LPC17",
       description: "Hardware da linha EmbFlex que permite a implementação rápida e fácil de soluções inteligentes.",
-      image: "images/CPULPC.png",
+      image: "images/produtos/CPULPC.png",
       longDescription: "A CPU LPC17 é um hardware da linha EmbFlex que permite a implementação rápida e fácil de soluções inteligentes e conectadas para equipamentos e processos. Equipada com poderoso microcontrolador ARM Cortex-M3. Suporte para FreeRTOS e desenvolvimento em linguagem C.",
       specs: [
         "Microcontrolador LPC1778 (ARM Cortex-M3) de 120MHz",
@@ -59,7 +59,7 @@ const allProducts = [
       id: "cpu-som",
       title: "CPU EMBFlex SoM",
       description: "Hardware da linha EmbFlex que permite a criação de soluções computacionais prontas para uso.",
-      image: "images/CPUSoM.png",
+      image: "images/produtos/CPUSoM.png",
       longDescription: "Hardware da linha EmbFlex que permite a criação de soluções computacionais prontas para uso, de tamanho reduzido, alto poder de processamento e presença de várias interfaces industriais e de conectividade. Compatível com módulos Toradex da Família Verdin/Colibri (adquiridos separadamente).",
       specs: [
         "Portas USB (Host/Device) e Ethernet",
@@ -76,7 +76,7 @@ const allProducts = [
       id: "flexcard-io",
       title: "FLEXCard I/O",
       description: "Placa de I/O com entradas/saídas digitais, saídas a relé e entradas analógicas.",
-      image: "images/FlexIO.png",
+      image: "images/produtos/FlexIO.png",
       longDescription: "Placa de I/O com entradas/saídas digitais, saídas a relé e entradas analógicas. Entradas isoladas com acoplamento óptico. Comunicação Flexbus/Modbus RTU Slave.",
       specs: [
         "Até 8 saídas digitais (NPN, PNP, NPN opto-isolada ou relés)",
@@ -92,7 +92,7 @@ const allProducts = [
       id: "flexcard-energy",
       title: "FLEXCard Energy",
       description: "Hardware dedicado para medição e análise de qualidade de energia.",
-      image: "images/Energy.png",
+      image: "images/produtos/Energy.png",
       longDescription: "Hardware dedicado para medição e análise de qualidade de energia. Trabalha em rede AC 127/220/380 VAC, monitorando diversos parâmetros de consumo e qualidade da rede. Comunica com qualquer CPU EMBFlex ou Modbus RTU, podendo ser utilizada para medição centralizada ou isolada e diagnóstico de falhas em instalações e equipamentos.",
       specs: [
         "Monitoramento de redes monofásicas e trifásicas",
@@ -107,7 +107,7 @@ const allProducts = [
       id: "flexcard-analog",
       title: "FLEXCard Analog",
       description: "Hardware da linha EMBFlex para aquisição de sinais analógicos.",
-      image: "images/Analog.png",
+      image: "images/produtos/Analog.png",
       longDescription: "Hardware da linha EmbFlex para aquisição de sinais analógicos. Pode trabalhar com diversas configurações atendendo vários ranges de tensões e sensores de temperatura. Ideal para automação de equipamentos com diversos sensores ou construção de datalog multicanal. Comunica com qualquer CPU EMBFlex ou via interface RS-485 (Modbus RTU).",
       specs: [
         "Até 8 entradas analógicas de alta resolução (16 bits)",
@@ -122,7 +122,7 @@ const allProducts = [
       id: "accessory-usb",
       title: "Adaptador USB",
       description: "Adaptador USB-Serial para gravação de firmware nas placas EMBFlex.",
-      image: "images/AdapUSB.png",
+      image: "images/produtos/AdapUSB.png",
       longDescription: "Este adaptador facilita a comunicação entre o seu computador e qualquer placa da linha EMBFlex, permitindo a gravação de firmware, depuração de código e visualização de dados via porta serial de forma simples e direta.",
       specs: ["Interface USB-C", "Conversor USB-Serial CH340/FTDI", "LEDs indicadores de TX/RX", "Compatível com Windows, macOS e Linux"],
       applications: ["Desenvolvimento de Firmware", "Depuração de Código", "Interface com o Computador"]
@@ -131,7 +131,7 @@ const allProducts = [
       id: "accessory-din",
       title: "Régua Trilho DIN",
       description: "Suporte para fixação da placa no painel elétrico para montagem em trilho DIN.",
-      image: "images/TrilhoDIN.png",
+      image: "images/produtos/TrilhoDIN.png",
       longDescription: "Projetado para ambientes industriais, este suporte permite a montagem segura e organizada de qualquer placa EMBFlex em painéis elétricos padrão DIN, garantindo uma instalação limpa e profissional.",
       specs: ["Padrão de montagem DIN 35mm", "Material de alta resistência", "Sistema de trava rápida", "Fácil instalação e remoção"],
       applications: ["Painéis de Automação", "Quadros de Comando", "Instalações Industriais"]
@@ -140,7 +140,7 @@ const allProducts = [
       id: "accessory-display",
       title: "Display TFT Touch",
       description: "Display TFT colorido com touch resistivo compatível com as CPUs EMBFlex.",
-      image: "images/DisplayTFT.png",
+      image: "images/produtos/DisplayTFT.png",
       longDescription: "Crie interfaces gráficas ricas e interativas para seus produtos com nosso display TFT colorido. Com touchscreen resistivo, é ideal para IHMs em ambientes industriais, onde o uso de luvas é comum.",
       specs: ["Tamanhos de 3.5”, 4.3” e 7”", "Resolução de até 800x480 pixels", "Touchscreen resistivo de 4 fios", "Interface paralela de alta velocidade"],
       applications: ["Interfaces Homem-Máquina (IHM)", "Painéis de Controle", "Equipamentos com Interface Gráfica"]

@@ -11,7 +11,7 @@ const blogPosts = [
     description: "De 18 a 21 de julho, em São Paulo (SP), acontece a FIEE Smart Future, o maior evento da América Latina para a indústria elétrica, eletrônica e de automação.",
     category: "Evento",
     date: "2023-07-17",
-    image: "/images/EventoFIEE.jpg",
+    image: "/images/blog/EventoFIEE.jpg",
     link: "/blog"
   },
   {
@@ -20,7 +20,7 @@ const blogPosts = [
     description: "A Embtech oferece uma família de hardware voltada para o desenvolvimento rápido de soluções embarcadas através das suas placas EMBFlex.",
     category: "Placas Embarcadas",
     date: "2020-07-09",
-    image: "/images/placaBlog.jpg",
+    image: "/images/blog/placaBlog.jpg",
     link: "/blog"
   },
   {
@@ -29,7 +29,7 @@ const blogPosts = [
     description: "De 23 a 26 de julho, em São Paulo (SP), acontece a FIEE Smart Future, onde a Embtech apresentará suas inovações e nova linha de produtos.",
     category: "Lançamento",
     date: "2019-07-19",
-    image: "/images/linhaProdutos.jpg",
+    image: "/images/blog/linhaProdutos.jpg",
     link: "/blog"
   }
 ];
@@ -90,8 +90,8 @@ const BlogSection = () => {
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#C8D820]">
-            Blog & Insights
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">
+            <span className="text-[#C8D820]">Blog</span> & Insights
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Compartilhamos conhecimento sobre tecnologias embarcadas, IoT e as últimas inovações do setor.

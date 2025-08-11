@@ -34,55 +34,55 @@ const ProdutosPropriosSection = () => {
     {
       title: "CPU EMBFlex ESP32",
       description: "CPU baseada no ESP32 para prototipagem rápida e soluções conectadas.",
-      image: "images/CPUEsp.png",
+      image: "images/produtos/CPUEsp.png",
       category: "CPU"
     },
     {
       title: "CPU EMBFlex LPC17",
       description: "Microcontrolador ARM Cortex-M3 para aplicações industriais e de automação.",
-      image: "images/CPULPC.png",
+      image: "images/produtos/CPULPC.png",
       category: "CPU"
     },
     {
       title: "CPU EMBFlex SoM",
       description: "System on Module de alta capacidade de processamento para as soluções mais exigentes.",
-      image: "images/CPUSoM.png",
+      image: "images/produtos/CPUSoM.png",
       category: "CPU"
     },
     {
       title: "FLEXCard I/O",
       description: "Placa para aquisição de dados e acionamento de periféricos.",
-      image: "images/FlexIO.png",
+      image: "images/produtos/FlexIO.png",
       category: "Flexcard"
     },
     {
       title: "Energy",
       description: "Placa para medição de qualidade de energia elétrica em redes AC.",
-      image: "images/Energy.png",
+      image: "images/produtos/Energy.png",
       category: "Flexcard"
     },
     {
       title: "Analog",
       description: "Placa de expansão de sinais analógicos para temperatura, corrente, etc.",
-      image: "images/Analog.png",
+      image: "images/produtos/Analog.png",
       category: "Flexcard"
     },
     {
       title: "Adaptador USB",
       description: "Adaptador USB-Serial para gravação de firmware nas placas EMBFlex.",
-      image: "images/AdapUSB.png",
+      image: "images/produtos/AdapUSB.png",
       category: "Acessório"
     },
     {
       title: "Régua Trilho DIN",
       description: "Suporte para fixação da placa no painel elétrico para montagem em trilho DIN.",
-      image: "images/TrilhoDIN.png",
+      image: "images/produtos/TrilhoDIN.png",
       category: "Acessório"
     },
     {
       title: "Display TFT Touch",
       description: "Display TFT colorido com touch resistivo compatível com as CPUs EMBFlex.",
-      image: "images/DisplayTFT.png",
+      image: "images/produtos/DisplayTFT.png",
       category: "Acessório"
     }
   ];

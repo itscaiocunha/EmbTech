@@ -6,7 +6,7 @@ const ServicesSection = () => {
     {
       title: "Linha SMT",
       description: "Utilizamos equipamentos de última geração para montagem SMT, garantindo a máxima precisão e qualidade para componentes complexos como 0201, BGA e QFN. Nossa linha automatizada assegura eficiência e repetibilidade em larga escala.",
-      image: "/images/smt.JPG",
+      image: "/images/servicos/smt.JPG",
       stats: [
         { value: "100k", label: "CPH (Componentes/Hora)" },
         { value: "99.8%", label: "Precisão de Montagem" }
@@ -15,7 +15,7 @@ const ServicesSection = () => {
     {
       title: "Linha THT",
       description: "Nossa linha de montagem THT combina automação e expertise manual para garantir soldas perfeitas e duradouras, seguindo os mais rigorosos padrões da indústria, como o IPC-A-610.",
-      image: "/images/tht.JPG",
+      image: "/images/servicos/tht.JPG",
       stats: [
         { value: "IPC-A-610", label: "Padrão de Qualidade" },
         { value: "100%", label: "Inspeção Pós-Solda" }
@@ -24,7 +24,7 @@ const ServicesSection = () => {
     {
       title: "Controle de Qualidade",
       description: "A qualidade é o pilar do nosso processo. Com inspeção SPI e AOI, testes funcionais e elétricos, e rastreabilidade total, garantimos que cada produto atenda às mais altas exigências.",
-      image: "/images/teste.JPG",
+      image: "/images/servicos/teste.JPG",
       stats: [
         { value: "ISO 9001", label: "Certificação" },
         { value: "100%", label: "Rastreabilidade" }
@@ -33,7 +33,7 @@ const ServicesSection = () => {
     {
       title: "Turn Key & Box Building",
       description: "Oferecemos a solução completa: desde a compra de componentes até a montagem final do produto, embalagem e expedição. Simplifique sua cadeia de suprimentos conosco.",
-      image: "/images/keyBox.JPG",
+      image: "/images/servicos/keyBox.JPG",
       stats: [
         { value: "500+", label: "Projetos Entregues" },
         { value: "98%", label: "Satisfação de Clientes" }
@@ -46,7 +46,7 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4">
         {/* Cabeçalho da Seção */}
         <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-5xl font-bold">
+          <h2 className="text-4xl md:text-5xl text-primary font-bold">
             Nossos <span className="text-[#C8D820]">Serviços</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mt-4">

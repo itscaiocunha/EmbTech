@@ -50,7 +50,7 @@ const AboutUs = () => {
           <Badge variant="outline" className="mb-4 px-4 py-2 text-sm" style={{borderColor: '#C8D820'}}>
             Conheça a Embtech
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl text-primary font-bold mb-6">
             Nossos <span style={{color: '#C8D820'}}>Compromissos</span>
           </h2>
           <p className="text-xl text-black/70 max-w-3xl mx-auto">

@@ -22,7 +22,7 @@ const Navigation = () => {
   const navLinks = [
     { href: "/sobre-nos", label: "Sobre Nós" },
     { href: "/produtos", label: "Produtos" },
-    { href: "/solucoes", label: "Serviços" },
+    { href: "/servicos", label: "Serviços" },
     { href: "/cases", label: "Cases" },
     { href: "/blog", label: "Blog" },
     // { href: "/contato", label: "Contato" },
@@ -36,7 +36,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <a href="/">
               <img 
-                src="https://emb-tech.vercel.app/images/logoEmbtech.png"
+                src="images/logo/logoEmbtech.png"
                 alt="EmbTech" 
                 className="h-8 w-auto"
               />
